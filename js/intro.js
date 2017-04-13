@@ -9,6 +9,8 @@ $(document).ready(function(){
 
 function typingCallback() {
   setTimeout(function() {
-    $(".description").hide().text("Full Stack Developer | Web Designer").fadeIn("slow");
+    $(".description").hide().text("Full Stack Developer | Web Designer").fadeIn("slow", function() {
+      $(".icons-container").fadeIn("slow");
+    });
   }, 1000)
 }

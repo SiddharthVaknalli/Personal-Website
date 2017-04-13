@@ -13,22 +13,24 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <nav class="nav-container">
-      <ul class="nav-list">
-        <li class="nav-list-item"><a href="#">Home</a></li>
-        <li class="nav-list-item"><a href="#">About</a></li>
-        <li class="nav-list-item"><a href="#">Projects</a></li>
-        <li class="nav-list-item"><a href="#">Resume</a></li>
-        <li class="nav-list-item"><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <div>
+      <nav class="nav-container">
+        <ul class="nav-list">
+          <li class="nav-list-item"><a href="#">Home</a></li>
+          <li class="nav-list-item"><a href="#">About</a></li>
+          <li class="nav-list-item"><a href="#">Projects</a></li>
+          <li class="nav-list-item"><a href="#">Resume</a></li>
+          <li class="nav-list-item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="content-container">
       <div class="intro-section">
         <h1 class="name">Siddharth Vaknalli</h1>
-        <h3 class="description">
+        <p class="description">
           I'm a
           <span class="role"></span>
-        </h3>
+        </p>
         <div class="icons-container">
           <a href="https://github.com/SiddharthVaknalli">
             <i class="fa fa-github fa-lg awesome-icon"></i>
@@ -41,12 +43,34 @@
           </a>
         </div>
       </div>
-      <div class="about-section">
-        <h2 class="about-title">About</h2>
+      <div class="section about">
+        <h2 class="section-title">About</h2>
         Hey there, I'm Siddharth Vaknalli. Thanks for stopping by!<br>
         I study Software Engineering at the University of Waterloo. I am passionate about programming and spend a lot of my time learning cool new technologies. I have a drive for building full stack web applications that are useful and look great, and I'm currently learning mobile development.
-        Outside development, I like to swim and I recently got into running. I also enjoy teaching and have volunteered as a teaching assistant before. Among my other varied interests are business and graphic design.<br>
+        Outside development, I like to swim and I recently began running. I also enjoy teaching and have volunteered as a teaching assistant before. Among my other varied interests are business and graphic design.<br>
         Feel free to look through my projects and shoot me a message to collaborate! If you wish to hire me, have a look at my resume.
+      </div>
+      <div class="section projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-item">
+          <div class="project-image">
+            <img src="assets/images/chess.png" />
+          </div>
+          <div class="project-info">
+            <div class="project-title">Ultimate Chess</div>
+            <div class="project-desc">
+              A Chess game for PC with single and multiplayer options which includes 4 levels of difficulty against the computer.
+            </div>
+            <div class="project-tags">
+              <ul class="project-tags-list">
+                <li class="project-tag">Java</li>
+                <li class="project-tag">Swing</li>
+                <li class="project-tag">Minimax algorithm</li>
+                <li class="project-tag">Alpha-beta pruning</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
