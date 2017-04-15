@@ -12,15 +12,15 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="css/main.css" rel="stylesheet" type="text/css">
   </head>
-  <body>
+  <body id="top">
     <div>
       <nav class="nav-container">
         <ul class="nav-list">
-          <li class="nav-list-item"><a href="#">Home</a></li>
+          <li class="nav-list-item"><a href="#top">Home</a></li>
           <li class="nav-list-item"><a href="#about">About</a></li>
           <li class="nav-list-item"><a href="#projects">Projects</a></li>
           <li class="nav-list-item"><a href="#">Contact</a></li>
-          <li class="nav-list-item"><a href="#" target="_blank">Resume</a></li>
+          <li class="nav-list-item"><a href="assets/resume.pdf" class="resume" target="_blank">Resume</a></li>
         </ul>
       </nav>
     </div>
@@ -49,14 +49,14 @@
           <span class="about-line">Hey there, I'm Siddharth Vaknalli. Thanks for stopping by!</span>
           <span class="about-line">I study Software Engineering at the University of Waterloo. I am passionate about programming and spend a lot of my time learning cool new technologies. I have a drive for building full stack web applications that are useful and look great, and I'm currently learning mobile development.</span>
           <span class="about-line">Outside development, I like to swim and I recently began running. I also enjoy teaching and have volunteered as a teaching assistant before. Among my other varied interests are business and graphic design.</span>
-          <span class="about-line">Feel free to look through my projects and shoot me a message to collaborate! If you wish to hire me, have a look at my resume.</span>
+          <span class="about-line">Feel free to look through my projects and shoot me a message to collaborate! If you wish to hire me, have a look at my <a href="assets/resume.pdf" target="_blank">resume</a>.</span>
         </div>
       </div>
       <div class="section" id="projects">
         <h2 class="section-title">Projects</h2>
         <div class="project-item">
           <div class="project-image">
-            <img src="assets/images/chess.png" alt="Ultimate Chess" />
+            <a href="https://github.com/SiddharthVaknalli/Ultimate-Chess" target="_blank"><img src="assets/images/chess.png" alt="Ultimate Chess" /></a>
           </div>
           <div class="project-info">
             <div class="project-title">Ultimate Chess</div>
@@ -74,8 +74,7 @@
             <div class="project-links">
               <ul class="project-links-list">
                 <li class="project-link">
-                  <i class="fa fa-globe fa-lg"></i>
-                  <a href="https://github.com/SiddharthVaknalli/Ultimate-Chess" target="_blank">View source</a>
+                  <a href="https://github.com/SiddharthVaknalli/Ultimate-Chess" target="_blank"><i class="fa fa-github fa-lg"></i>View source</a>
                 </li>
               </ul>
             </div>
@@ -83,7 +82,7 @@
         </div>
         <div class="project-item">
           <div class="project-image">
-            <img src="assets/images/squeak-home.png" alt="Squeak Home!" />
+            <a href="https://github.com/SiddharthVaknalli/Squeak-Home" target="_blank"><img src="assets/images/squeak-home.png" alt="Squeak Home!" /></a>
           </div>
           <div class="project-info">
             <div class="project-title">Squeak Home!</div>
@@ -99,8 +98,7 @@
             <div class="project-links">
               <ul class="project-links-list">
                 <li class="project-link">
-                  <i class="fa fa-globe fa-lg"></i>
-                  <a href="https://github.com/SiddharthVaknalli/Squeak-Home" target="_blank">View source</a>
+                  <a href="https://github.com/SiddharthVaknalli/Squeak-Home" target="_blank"><i class="fa fa-github fa-lg"></i>View source</a>
                 </li>
               </ul>
             </div>
@@ -108,7 +106,7 @@
         </div>
         <div class="project-item">
           <div class="project-image">
-            <img src="assets/images/priorify.png" alt="Priorify!" />
+            <a href="https://github.com/utk9/Priorify-Android" target="_blank"><img src="assets/images/priorify.png" alt="Priorify!" /></a>
           </div>
           <div class="project-info">
             <div class="project-title">Priorify!</div>
@@ -124,8 +122,7 @@
             <div class="project-links">
               <ul class="project-links-list">
                 <li class="project-link">
-                  <i class="fa fa-globe fa-lg"></i>
-                  <a href="https://github.com/utk9/Priorify-Android" target="_blank">View source</a>
+                  <a href="https://github.com/utk9/Priorify-Android" target="_blank"><i class="fa fa-github fa-lg"></i>View source</a>
                 </li>
               </ul>
             </div>
@@ -137,6 +134,7 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/intro.js"></script>
   </body>
 </html>

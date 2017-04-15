@@ -153,6 +153,17 @@ a:hover .awesome-icon {
 .project-image img {
   width: 100%;
   height: 100%;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+}
+
+.project-image img:hover {
+  opacity: 0.7;
+  transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out;
 }
 
 .project-info {
@@ -175,4 +186,12 @@ a:hover .awesome-icon {
   border-radius: 4px;
   white-space: nowrap;
   line-height: 32px;
+}
+
+.project-link i {
+  margin-right: 5px;
+}
+
+.project-link a:hover {
+  color: #66CCFF;
 }
