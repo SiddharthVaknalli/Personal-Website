@@ -10,7 +10,7 @@ $(document).ready(function(){
 function typingCallback() {
   setTimeout(function() {
     $(".description").hide().text("Full Stack Developer | Web Designer").fadeIn("slow", function() {
-      $(".icons-container").fadeIn("slow");
+      $(".intro-content").slideDown("slow");
     });
   }, 1000)
 }
