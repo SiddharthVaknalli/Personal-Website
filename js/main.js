@@ -5,7 +5,7 @@ $(document).ready(function(){
     event.preventDefault();
     var hash = this.hash;
     $('html, body').animate({
-      scrollTop: $(hash).offset().top - 40 // Extra offset of 40px is to account for navbar height
+      scrollTop: $(hash).offset().top
     }, 700, function(){
       window.location.hash = hash;
     });

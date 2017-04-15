@@ -29,7 +29,6 @@ ul {
 
 .nav-container {
   display: block;
-  position: fixed;
   text-align: center;
   width: 100%;
 }
@@ -57,6 +56,7 @@ ul {
   /* Use flexbox to vertically center intro section */
   display: flex;
   justify-content: center;
+  margin-top: -50px;
 }
 
 .intro-section {
@@ -130,10 +130,6 @@ a:hover .awesome-icon {
   100% { opacity:1; }
 }
 
-.main-content {
-  margin-top: 80px;
-}
-
 .section {
   margin: 30px 7%;
 }
@@ -154,7 +150,6 @@ a:hover .awesome-icon {
 .about-line {
   margin: 10px 0;
   display: block;
-  text-align: center;
 }
 
 /* Projects section */
@@ -220,4 +215,21 @@ a:hover .awesome-icon {
 
 .project-link a:hover {
   color: #66CCFF;
+}
+
+@media(max-width: 1024px) {
+  .project-image {
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .project-info {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .project-title, .project-links, .project-tags {
+    text-align: center;
+  }
 }
