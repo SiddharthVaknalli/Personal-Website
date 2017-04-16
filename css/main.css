@@ -233,3 +233,47 @@ a:hover .awesome-icon {
     text-align: center;
   }
 }
+
+/* Contact section */
+
+.contact-form {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.form-input, #message, #form-button {
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 20px;
+  padding: 5px 50px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.form-input {
+  height: 50px;
+}
+
+#message {
+  height: 200px;
+  resize: vertical;
+  padding-top: 15px;
+}
+
+.form-button-wrapper {
+  text-align: center;
+}
+
+#form-button {
+  background: none;
+  width: 30%;
+}
+
+.input-icon {
+  position: absolute;
+  float: left;
+  margin-top: 30px;
+  margin-left: 15px;
+  z-index: 2;
+}
