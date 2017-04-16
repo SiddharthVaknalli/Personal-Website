@@ -134,8 +134,8 @@
       </div>
       <div class="section" id="contact">
         <h2 class="section-title">Contact</h2>
-        <div class="contact-form">
-          <form role="form" method="POST" action="email.php">
+        <div class="contact-form-container">
+          <form role="form" id="contact-form" method="POST" action="email.php" novalidate>
             <div class="form-input-wrapper">
               <span class="fa fa-user fa-lg input-icon"></span>
               <input type="text" class="form-input" id="name" name="name" placeholder="Name" required>
@@ -155,6 +155,7 @@
               </button>
             </div>
           </form>
+          <div class="submit-message"></div>
         </div>
       </div>
     </div>
