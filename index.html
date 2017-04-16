@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Stylesheet links -->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="css/main.css" rel="stylesheet" type="text/css">
   </head>
@@ -91,7 +90,7 @@
           <div class="project-info">
             <div class="project-title">Squeak Home!</div>
             <div class="project-desc">
-              A 2D platform game where the player must help the mouse escape the cat and reach home safely! Includes 3 gameplay levels includes a maze level.
+              A 2D platform game where the player must help the mouse escape the cat and reach home safely! Includes 3 gameplay levels.
             </div>
             <div class="project-tags">
               <ul class="project-tags-list">
@@ -136,21 +135,21 @@
       <div class="section" id="contact">
         <h2 class="section-title">Contact</h2>
         <div class="contact-form">
-          <form>
+          <form role="form" method="POST" action="email.php">
             <div class="form-input-wrapper">
               <span class="fa fa-user fa-lg input-icon"></span>
-              <input type="text" class="form-input" id="name" name="name" placeholder="Name" />
+              <input type="text" class="form-input" id="name" name="name" placeholder="Name" required>
             </div>
             <div class="form-input-wrapper">
               <span class="fa fa-envelope fa-lg input-icon"></span>
-              <input type="email" class="form-input" id="email" name="email" placeholder="Email" />
+              <input type="email" class="form-input" id="email" name="email" placeholder="Email" required>
             </div>
             <div class="form-input-wrapper">
               <span class="fa fa-pencil fa-lg input-icon"></span>
-              <textarea id="message" name="message" placeholder="Message"></textarea>
+              <textarea id="message" name="message" placeholder="Message" required></textarea>
             </div>
             <div class="form-button-wrapper">
-              <button type="submit" name="form-button" id="form-button">
+              <button type="submit" name="submit" id="form-button">
                 <i class="fa fa-paper-plane awesome-icon"></i>
                 Send
               </button>

@@ -131,11 +131,12 @@ a:hover .awesome-icon {
 }
 
 .section {
-  margin: 30px 7%;
+  margin: 70px auto;
+  width: 70%;
 }
 
 .section-title {
-  margin: 20px 0;
+  margin: 60px 0;
   text-align: center;
   font-size: 36px;
 }
@@ -144,7 +145,6 @@ a:hover .awesome-icon {
 
 .about-content {
   margin: 0 auto;
-  width: 70%;
 }
 
 .about-line {
@@ -156,7 +156,6 @@ a:hover .awesome-icon {
 
 .project-item {
   overflow: auto;
-  width: 70%;
   margin: 40px auto;
   padding-bottom: 25px;
   border-bottom: 1px solid #D3D3D3;
@@ -189,8 +188,8 @@ a:hover .awesome-icon {
 
 .project-info {
   float: right;
-  width: 47%;
-  margin-left: 3%;
+  width: 45%;
+  margin-left: 5%;
 }
 
 .project-title {
@@ -238,7 +237,6 @@ a:hover .awesome-icon {
 
 .contact-form {
   margin: 0 auto;
-  width: 70%;
 }
 
 .form-input, #message, #form-button {
