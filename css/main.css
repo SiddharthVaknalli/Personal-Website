@@ -27,6 +27,30 @@ ul {
 
 /* Specific style rules */
 
+.top-content {
+  /* Set it to the height and width of the browser window */
+  width: 100vw;
+  height: 100vh;
+}
+
+.intro-background {
+  background: url("../assets/images/intro-background.jpg");
+  background-size: cover;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.intro {
+  width: 100%;
+  position: absolute;
+}
+
 .nav-container {
   display: block;
   text-align: center;
@@ -34,7 +58,8 @@ ul {
 }
 
 .nav-list {
-  margin: 15px auto;
+  margin: 0 auto;
+  padding-top: 30px;
   max-width: 500px;
   border-bottom: 1px solid black;
 }
@@ -49,22 +74,10 @@ ul {
   color: black;
 }
 
-.top-content {
-  /* Set it to the height and width of the browser window */
-  width: 100vw;
-  height: 100vh;
-  /* Use flexbox to vertically center intro section */
-  display: flex;
-  justify-content: center;
-  margin-top: -50px;
-}
-
 .intro-section {
-  margin: 0 auto;
+  margin: 20px auto;
   text-align: center;
   max-width: 500px;
-  /* Use flexbox to vertically center intro section */
-  align-self: center;
 }
 
 .name {
