@@ -4,7 +4,7 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 1px;
+  padding-top: 1px;
   overflow-x: hidden;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 ul {
@@ -145,26 +145,37 @@ a:hover .awesome-icon {
   100% { opacity:1; }
 }
 
+.section-wrapper {
+  width: 100%;
+  padding: 100px 0;
+  font-size: 24px;
+}
+
 .section {
-  margin: 70px auto;
+  margin: 0 auto;
   width: 70%;
 }
 
 .section-title {
-  margin: 60px 0;
-  text-align: center;
-  font-size: 36px;
+  margin-bottom: 70px;
+  font-size: 44px;
 }
 
 /* About section */
+
+#about {
+  background-color: #0000ff;
+  color: white;
+}
 
 .about-content {
   margin: 0 auto;
 }
 
 .about-line {
-  margin: 10px 0;
+  margin: 20px 0;
   display: block;
+  line-height: 1.75;
 }
 
 /* Projects section */
@@ -205,11 +216,17 @@ a:hover .awesome-icon {
   float: right;
   width: 45%;
   margin-left: 5%;
+  font-size: 20px;
 }
 
 .project-title {
-  margin-bottom: 15px;
-  font-size: 28px;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #0000ff;
+}
+
+.project-tags-list {
+  line-height: 2.0;
 }
 
 .project-tag {
@@ -217,10 +234,10 @@ a:hover .awesome-icon {
   padding: 4px 9px;
   margin-right: 5px;
   text-shadow: 0 1px 0 rgba(0,0,0,.15);
-  background-color: #66CCFF;
+  background-color: #f0f0f0;
   border-radius: 4px;
   white-space: nowrap;
-  line-height: 32px;
+  font-size: 16px;  
 }
 
 .project-link i {
@@ -228,7 +245,7 @@ a:hover .awesome-icon {
 }
 
 .project-link a:hover {
-  color: #66CCFF;
+  color: #0000ff;
 }
 
 @media(max-width: 1024px) {
@@ -250,22 +267,43 @@ a:hover .awesome-icon {
 
 /* Contact section */
 
+#contact {
+  background-color: #f0f0f0;
+}
+
 .contact-form-container {
   margin: 0 auto;
 }
 
+.email {
+  margin-bottom: 20px;
+}
+
 .form-input, #message, #form-button {
-  margin: 10px 0;
+  background: transparent;
+  margin: 15px 0;
   width: 100%;
   border-radius: 4px;
-  font-size: 20px;
-  padding: 5px 50px;
+  font-size: 24px;
+  padding: 10px 65px;
   border: 1px solid black;
   box-sizing: border-box;
 }
 
+.form-input:focus,
+#message:focus,
+#form-button:focus {
+  outline: none;
+}
+
+.form-input:focus,
+#message:focus,
+#form-button:hover {
+  border: 2px solid #0000ff;
+}
+
 .form-input {
-  height: 50px;
+  height: 60px;
 }
 
 #message {
@@ -283,10 +321,15 @@ a:hover .awesome-icon {
   width: 30%;
 }
 
+#form-button:hover, #form-button:hover i {
+  cursor: pointer;
+  color: #0000ff;
+}
+
 .input-icon {
   position: absolute;
   float: left;
-  margin-top: 30px;
+  margin-top: 32px;
   margin-left: 15px;
   z-index: 2;
 }
