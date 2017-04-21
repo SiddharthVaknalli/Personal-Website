@@ -56,9 +56,8 @@ $(document).ready(function(){
     });
   }, 1000);
 
-  var waypoint = $('#about').waypoint({
+  var aboutWaypoint = $('#about').waypoint({
     handler: function(direction) {
-      console.log("You have scrolled to the about section");
       $(this.element.children[0]).animate({
         opacity: 'toggle',
         'padding-top': 100
@@ -66,6 +65,38 @@ $(document).ready(function(){
       this.destroy();
     },
     offset: '70%'
+  });
+
+  var projectsWaypoint = $('#projects').waypoint({
+    handler: function(direction) {
+      var projectTitle = $('#projects .section-title');
+      projectTitle.css('visibility', 'visible');
+      projectTitle.addClass("animated fadeInLeft");
+      this.destroy();
+    },
+    offset: '80%'
+  });
+
+  var projectTitleWaypoints = $('.project-title').waypoint({
+    handler: function(direction) {
+      var el = $(this.element);
+      el.css('visibility', 'visible');
+      el.addClass("animated fadeIn");
+      this.destroy();
+    },
+    offset: '90%'
+  })
+
+  var contactWaypoint = $('#contact').waypoint({
+    handler: function(direction) {
+      $(this.element.children[0]).animate({
+        opacity: 'toggle',
+      }, 800, function() {
+        $('#contact .section-title').addClass("animated bounce");
+      });
+      this.destroy();
+    },
+    offset: '50%'
   });
 
   adjustDimensions();
@@ -77,5 +108,5 @@ $(window).resize(function() {
 
 function adjustDimensions() {
   $('#about').height($('#about').children(':first').height() + 200);
+  $('#contact').height($('#contact').children(':first').height() + 200);
 }
-
