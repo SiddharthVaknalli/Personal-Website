@@ -43,7 +43,7 @@ ul {
 }
 
 .nav-container {
-  display: block;
+  display: none;
   text-align: center;
   width: 100%;
   background-color: #f0f0f0;
@@ -94,6 +94,7 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
+  display: none;
 }
 
 .name {
@@ -147,26 +148,18 @@ a:hover .awesome-icon {
 
 .section-wrapper {
   width: 100%;
+  padding: 100px 0;
   font-size: 24px;
 }
 
 .section {
   margin: 0 auto;
-  padding: 100px 0;
   width: 70%;
 }
 
 .section-title {
   margin-bottom: 70px;
   font-size: 44px;
-}
-
-.scroll-animate-wrapper {
-  height: 100vh;
-}
-
-.scroll-animate {
-  display: none;
 }
 
 .fade-animate {
@@ -178,10 +171,6 @@ a:hover .awesome-icon {
 #about {
   background-color: #0000ff;
   color: white;
-}
-
-#about .section {
-  padding-top: 200px;
 }
 
 .about-content {

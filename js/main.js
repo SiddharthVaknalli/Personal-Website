@@ -58,10 +58,9 @@ $(document).ready(function(){
 
   var aboutWaypoint = $('#about').waypoint({
     handler: function(direction) {
-      $(this.element.children[0]).animate({
-        opacity: 'toggle',
-        'padding-top': 100
-      }, 800);
+      var aboutSection = $(this.element.children[0]);
+      aboutSection.css('visibility', 'visible');
+      aboutSection.addClass("animated fadeInUp");
       this.destroy();
     },
     offset: '70%'
@@ -89,24 +88,14 @@ $(document).ready(function(){
 
   var contactWaypoint = $('#contact').waypoint({
     handler: function(direction) {
-      $(this.element.children[0]).animate({
-        opacity: 'toggle',
-      }, 800, function() {
+      var contactSection = $(this.element.children[0]);
+      contactSection.css('visibility', 'visible');
+      contactSection.addClass("animated slideInUp");
+      contactSection.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
         $('#contact .section-title').addClass("animated bounce");
       });
       this.destroy();
     },
-    offset: '50%'
+    offset: '70%'
   });
-
-  adjustDimensions();
 });
-
-$(window).resize(function() {
-  adjustDimensions();
-});
-
-function adjustDimensions() {
-  $('#about').height($('#about').children(':first').height() + 200);
-  $('#contact').height($('#contact').children(':first').height() + 200);
-}
