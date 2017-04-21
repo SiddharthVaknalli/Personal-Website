@@ -48,6 +48,7 @@ ul {
   width: 100%;
   background-color: #f0f0f0;
   opacity: 0.7;
+  display: none;
 }
 
 .nav-list {
@@ -94,6 +95,7 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
+  display: none;
 }
 
 .name {
@@ -147,13 +149,16 @@ a:hover .awesome-icon {
 
 .section-wrapper {
   width: 100%;
-  padding: 100px 0;
+  /* Initially set wrapper height to viewport height for scrolling animation to work*/
+  height: 100vh;
   font-size: 24px;
 }
 
 .section {
   margin: 0 auto;
+  padding: 100px 0;
   width: 70%;
+  display: none;
 }
 
 .section-title {
@@ -166,6 +171,10 @@ a:hover .awesome-icon {
 #about {
   background-color: #0000ff;
   color: white;
+}
+
+#about .section {
+  padding-top: 200px;
 }
 
 .about-content {

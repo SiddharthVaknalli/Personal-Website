@@ -50,4 +50,32 @@ $(document).ready(function(){
     });
   });
 
+  setTimeout(function() {
+    $('.intro-section').fadeIn("slow", function() {
+      $('.nav-container').slideDown();
+    });
+  }, 1000);
+
+  var waypoint = $('#about').waypoint({
+    handler: function(direction) {
+      console.log("You have scrolled to the about section");
+      $(this.element.children[0]).animate({
+        opacity: 'toggle',
+        'padding-top': 100
+      }, 800);
+      this.destroy();
+    },
+    offset: '70%'
+  });
+
+  adjustDimensions();
 });
+
+$(window).resize(function() {
+  adjustDimensions();
+});
+
+function adjustDimensions() {
+  $('#about').height($('#about').children(':first').height() + 200);
+}
+
