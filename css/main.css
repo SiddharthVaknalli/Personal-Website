@@ -7,6 +7,7 @@ body {
   padding-top: 1px;
   overflow-x: hidden;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -53,13 +54,13 @@ ul {
 .nav-list {
   margin: 0 auto;
   padding: 20px 0;
+  width: 450px;
+  display: table;
 }
 
 .nav-list-item {
-  display: inline;
-  margin-right: 30px;
-  height: 40px;
-  font-size: 20px;
+  display: table-cell;
+  width: 25%;
 }
 
 .nav-list-item a {
@@ -95,6 +96,7 @@ ul {
   transform: translate(-50%, -50%);
   position: absolute;
   display: none;
+  white-space: nowrap;
 }
 
 .name {
@@ -113,6 +115,7 @@ ul {
 .awesome-icon {
   color: black;
   margin-right: 10px;
+  font-size: 28px;
 }
 
 a:hover .awesome-icon {
@@ -149,7 +152,6 @@ a:hover .awesome-icon {
 .section-wrapper {
   width: 100%;
   padding: 100px 0;
-  font-size: 24px;
 }
 
 .section {
@@ -194,6 +196,7 @@ a:hover .awesome-icon {
 
 .project-item:last-of-type {
   border-bottom: none;
+  padding-bottom: 0;
 }
 
 .project-image {
@@ -221,23 +224,23 @@ a:hover .awesome-icon {
   float: right;
   width: 45%;
   margin-left: 5%;
-  font-size: 20px;
 }
 
 .project-title {
   margin-bottom: 30px;
-  font-size: 32px;
+  font-size: 35px;
   color: #0000ff;
 }
 
 .project-tags-list {
-  line-height: 2.0;
+  margin: 10px 0 20px 0;
 }
 
 .project-tag {
-  display: inline;
-  padding: 4px 9px;
+  display: inline-block;
+  padding: 5px 9px;
   margin-right: 5px;
+  margin-top: 10px;
   text-shadow: 0 1px 0 rgba(0,0,0,.15);
   background-color: #f0f0f0;
   border-radius: 4px;
@@ -251,23 +254,6 @@ a:hover .awesome-icon {
 
 .project-link a:hover {
   color: #0000ff;
-}
-
-@media(max-width: 1024px) {
-  .project-image {
-    float: none;
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .project-info {
-    width: 100%;
-    margin-top: 30px;
-  }
-
-  .project-title, .project-links, .project-tags {
-    text-align: center;
-  }
 }
 
 /* Contact section */
@@ -289,10 +275,10 @@ a:hover .awesome-icon {
   margin: 15px 0;
   width: 100%;
   border-radius: 4px;
-  font-size: 24px;
   padding: 10px 65px;
   border: 1px solid black;
   box-sizing: border-box;
+  font-size: inherit;
 }
 
 .form-input:focus,
@@ -324,6 +310,7 @@ a:hover .awesome-icon {
 #form-button {
   background: none;
   width: 30%;
+  white-space: nowrap;
 }
 
 #form-button:hover, #form-button:hover i {
@@ -350,4 +337,94 @@ a:hover .awesome-icon {
 
 .red {
   color: red;
+}
+
+/* Media queries */
+
+@media(max-width: 1024px) {
+  .project-image {
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .project-info {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .project-title, .project-links, .project-tags {
+    text-align: center;
+  }
+}
+
+@media(max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  .name {
+    font-size: 50px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .section-wrapper {
+    padding: 75px 0 40px 0;
+  }
+
+  .awesome-icon {
+    font-size: 24px;
+  }
+
+  .section-title {
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+
+  .project-title {
+    font-size: 30px;
+  }
+
+  .project-tag {
+    font-size: 13px;
+  }
+}
+
+@media(max-width: 450px) {
+  .nav-list {
+    margin: 0;
+    width: 100%;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .name {
+    font-size: 35px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .awesome-icon {
+    font-size: 20px;
+  }
+
+  .section-title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  .project-title {
+    font-size: 25px;
+  }
+
+  .project-tag {
+    font-size: 10px;
+  }
 }
