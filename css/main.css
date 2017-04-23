@@ -177,6 +177,7 @@ a:hover .awesome-icon {
 
 .about-content {
   margin: 0 auto;
+  font-size: 24px;
 }
 
 .about-line {
@@ -260,6 +261,7 @@ a:hover .awesome-icon {
 
 #contact {
   background-color: #f0f0f0;
+  padding-bottom: 50px;
 }
 
 .contact-form-container {
@@ -311,6 +313,8 @@ a:hover .awesome-icon {
   background: none;
   width: 30%;
   white-space: nowrap;
+  text-align: center;
+  padding: 10px 0;
 }
 
 #form-button:hover, #form-button:hover i {
@@ -327,16 +331,22 @@ a:hover .awesome-icon {
 }
 
 .submit-message {
-  margin-top: 20px;
   text-align: center;
+  border-radius: 4px;
+  padding: 10px 0;
+  margin-top: 20px;
 }
 
 .green {
   color: green;
+  background-color: lightgreen;
+  border: 1px solid green;
 }
 
 .red {
   color: red;
+  border: 1px solid red;
+  background-color: #ffcccc;
 }
 
 /* Media queries */
@@ -391,6 +401,23 @@ a:hover .awesome-icon {
   .project-tag {
     font-size: 13px;
   }
+
+  .about-content {
+    font-size: 20px;
+  }
+
+  .form-input {
+    height: 54px;
+    padding: 7px 50px;
+  }
+
+  #message {
+    padding-left: 50px;
+  }
+
+  #form-button {
+    width: 50%;
+  }
 }
 
 @media(max-width: 450px) {
@@ -426,5 +453,22 @@ a:hover .awesome-icon {
 
   .project-tag {
     font-size: 10px;
+  }
+
+  .about-content {
+    font-size: 18px;
+  }
+
+  .form-input {
+    height: 48px;
+    padding: 5px 45px;
+  }
+
+  #message {
+    padding-left: 45px;
+  }
+
+  #form-button {
+    width: 70%;
   }
 }
