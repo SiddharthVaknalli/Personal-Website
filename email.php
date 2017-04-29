@@ -39,7 +39,9 @@
       $to = 'sidd.v17@gmail.com'; 
       $subject = 'New message from '.$name;
 
-      $email = mail($to, $subject, $message, $from);
+      $headers = 'From: '.$from.' Reply-To: '.$from.' X-Mailer: PHP/'.phpversion();
+
+      $email = mail($to, $subject, $message, $headers);
       if ($email) {
         http_response_code(200);
         echo "Email sent successfully!";
