@@ -249,6 +249,12 @@ a:hover .awesome-icon {
   font-size: 16px;  
 }
 
+.project-link {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
 .project-link i {
   margin-right: 5px;
 }
