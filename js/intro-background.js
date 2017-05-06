@@ -10,7 +10,7 @@ function init() {
   container.id = 'intro-background';
   document.body.insertBefore( container, document.body.firstChild);
 
-  camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 1000 );
+  camera = new THREE.PerspectiveCamera( 70, $(window).width() / $(window).height(), 1, 1000 );
   scene = new THREE.Scene();
   var light = new THREE.DirectionalLight( 0xffffff, 1 );
   light.position.set( 1, 1, 1 ).normalize();
@@ -32,23 +32,24 @@ function init() {
   renderer = new THREE.WebGLRenderer();
   renderer.setClearColor( 0xffffff );
   renderer.setPixelRatio( window.devicePixelRatio );
-  renderer.setSize( window.innerWidth, window.innerHeight );
+  renderer.setSize( $(window).width(), $(window).height() );
   renderer.sortObjects = false;
   container.appendChild(renderer.domElement);
   document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-  window.addEventListener( 'resize', onWindowResize, false );
+  window.addEventListener( 'resize', onDimensionsChange, false );
+  window.addEventListener('orientationchange', onDimensionsChange, false);
 }
 
-function onWindowResize() {
-  camera.aspect = window.innerWidth / window.innerHeight;
+function onDimensionsChange() {
+  camera.aspect = $(window).width() / $(window).height();
   camera.updateProjectionMatrix();
-  renderer.setSize( window.innerWidth, window.innerHeight );
+  renderer.setSize( $(window).width(), $(window).height() );
 }
 
 function onDocumentMouseMove( event ) {
   event.preventDefault();
-  mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-  mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+  mouse.x = ( event.clientX / $(window).width() ) * 2 - 1;
+  mouse.y = - ( event.clientY / $(window).height() ) * 2 + 1;
 }
 
 function animate() {

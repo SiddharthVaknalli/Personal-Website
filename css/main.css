@@ -53,7 +53,7 @@ ul {
 
 .nav-list {
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 2% 0;
   width: 450px;
   display: table;
 }
@@ -417,6 +417,16 @@ a:hover .awesome-icon {
 
   #form-button {
     width: 50%;
+  }
+}
+
+@media(max-width: 615px) {
+  .name {
+    font-size: 42px;
+  }
+
+  .description {
+    font-size: 18px;
   }
 }
 
